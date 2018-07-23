@@ -133,6 +133,10 @@ init();
  var swiper = new Swiper('.swiper-container', {
   centeredSlides: true,
       grabCursor: true,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
 
       pagination: {
         el: '.swiper-pagination',

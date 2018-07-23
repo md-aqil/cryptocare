@@ -697,3 +697,67 @@ label {
 				    display: block;
 				    margin-top: 90px;
 			}
+
+			.navsearch input {
+				height: 50px;
+				    display: block;
+				    width: 300px;
+				    padding: 0px 10px;
+				    border: none;
+				    box-shadow: none !important;
+				    background: none !important;
+			}
+
+.navsearch  {
+	position: relative;
+	display: block;
+}
+
+.navsearch img {
+	width: 20px;
+    position: absolute;
+    top: 16px;
+    left: -18px;
+}
+
+.coin-list {
+	padding: 0;
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: center;
+	    flex-wrap: wrap;
+	   
+}
+
+.coin-list li {
+	list-style: none;
+}
+.coin-list li a {
+
+margin: 15px 15px;
+	text-decoration: none;
+	    background: #fff;
+	    display: block;
+
+	    padding: 2px 10px;
+	    border-radius: 4px;
+	    font-size: 23px;
+	    color: #333;
+padding-right: 20px;
+	    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.14);
+	    transition: opacity .45s cubic-bezier(0.25, 1, 0.33, 1), transform .45s cubic-bezier(0.25, 1, 0.33, 1), border-color .45s cubic-bezier(0.25, 1, 0.33, 1), color .45s cubic-bezier(0.25, 1, 0.33, 1), background-color .45s cubic-bezier(0.25, 1, 0.33, 1), box-shadow .45s cubic-bezier(0.25, 1, 0.33, 1);
+
+}
+
+.coin-list li a:hover {
+    box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16)!important;
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+   }
+
+   .title {
+   	    margin-left: 30px;
+    margin-bottom: 30px;
+    font-weight: 700;
+   }
