@@ -731,22 +731,26 @@ label {
 
 .coin-list li {
 	list-style: none;
+	text-align: center;
 }
 .coin-list li a {
-
+width: 160px;
 margin: 15px 15px;
 	text-decoration: none;
 	    background: #fff;
 	    display: block;
-
-	    padding: 2px 10px;
+		
+	    padding: 10px 10px;
 	    border-radius: 4px;
-	    font-size: 23px;
+	    font-size: 18px;
 	    color: #333;
-padding-right: 20px;
 	    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.14);
 	    transition: opacity .45s cubic-bezier(0.25, 1, 0.33, 1), transform .45s cubic-bezier(0.25, 1, 0.33, 1), border-color .45s cubic-bezier(0.25, 1, 0.33, 1), color .45s cubic-bezier(0.25, 1, 0.33, 1), background-color .45s cubic-bezier(0.25, 1, 0.33, 1), box-shadow .45s cubic-bezier(0.25, 1, 0.33, 1);
 
+}
+.coin-list li a img {
+	display: block;
+	margin: 0 auto;
 }
 
 .coin-list li a:hover {
@@ -761,3 +765,65 @@ padding-right: 20px;
     margin-bottom: 30px;
     font-weight: 700;
    }
+
+   td.name img {
+   	--size: 50px;
+   	margin-right: 15px;
+   
+   	    border-radius: 50%;
+   	    height: var(--size);
+   	    width: var(--size);
+   	    padding: 6px;
+   	    object-fit: contain;
+   }
+     td.name {
+     	font-size: 20px;
+     	width: 200px;	
+   }
+
+   .coinlist {
+   	border-collapse: separate;
+   	    border-spacing: 0 30px;
+   }
+
+   .coinlist tr {
+   	background: #fff;
+   	box-shadow: 1px 1px 4px #0000001a;
+}
+
+
+
+   .form-control{
+   	box-shadow: none !important;
+   }
+
+   .coin-header {
+   
+   	    font-weight: 900;
+   	    text-transform: uppercase;
+   	    letter-spacing: 2px;
+   }
+   .color-bitcoin {
+		--color: #d1862e;
+		background: rgba(white, 0.5);	
+		color: var(--color);
+   }
+
+   .coin-header>span {
+   	font-size: 22px;
+   	    text-transform: none;
+   	    font-weight: 700;
+   	    color: #808080;
+   	    letter-spacing: 1px;
+   }
+
+   .image-row img {
+   	width: 30px;
+   	padding: 5px;
+   	border-radius: 4px;
+   }
+ 
+ .image-row img:hover {
+   	background: #eee;
+ 	cursor: pointer;
+ }

@@ -14,147 +14,220 @@
 	}
 
 	.navbar-default {
-		background: #ffff;
-	box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
-	
-	    border:none;
+		background: none;
+		border:none;
 	}
 	html, body {
 		height: 100%;
 	}
 </style>
+<div class="login-wrap">
 
-<nav class="navbar navbar-default">
-	<div class="container-fluid">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-sample" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#"><img style="width: 140px;margin-top:-15px" src="img/logo.png" alt=""></a>
-		</div>
+<canvas class="particle" id="myCanvas" width="1200" height="600"></canvas>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="navbar-sample">
+<div class="container user-login-box-container">
+	<div class="user-login-box">
+<div class="row">
+
+		  <div class="col-md-6" style="padding: 15px;">
+
+					<nav class="navbar navbar-default">
+						<div class="container-fluid">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+								
+								<a class="navbar-brand" href="#">
+									<img style="width: 170px;margin-top:-15px" src="img/logo.png" alt="">
+								</a>
+							</div>
 			
-			<ul class="nav navbar-nav navbar-right">
-				<li>
-				<span class="navsearch">
-					<input type="text" class="form-control" placeholder="Search">
-					<img src="img/search.svg" alt="">
-				</span></li>
-				<li><a href="#" style="padding-top: 10px;padding-bottom: 0"><img width="30" src="img/avtar.jpg" alt=""> User Name</a></li>
-			</ul>
-		</div>
-	</div>
-</nav>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="navbar-sample">
+								
+								<ul class="nav navbar-nav navbar-right">
+									<li><a href="#"> <span class="text-muted" style="margin-right: 10px">Don't have an Account</span></a></li>
 
-<div class="container">
-	<h2 class="title">
-		   Top Trending Categories
+									<li> <a class="ui primary basic own round button" data-toggle="pill" href="#signup">SignUp</a></li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+
+	
+			<div class="tab-content">
+			  <div id="login" class="tab-pane fade in active">
+			     
+			     <form class="svg-animation-form ui form nav nav-pills">
+			       <div class="">
+			    		 	<div class="form-group">
+			    		 		<label for="email1">Email</label>
+			    		 	<input type="text"  id="email" class="form-control" maxlength="256"/>
+			    		 		
+			    		 	</div>
+			    		 	
+
+			    		 	<div class="form-group">
+			    		 	<label for="password">Password</label>
+			    		 	<input type="password" id="password" class="form-control" />
+			    		 		
+			    		 	</div>
+			    		
+			    			     <a href="" class="pull-right" style="
+			        margin-top: -23px;">Forgot password?</a>
+			
+			    			 <div class="inputGroup inputGroup3">
+			    			 	<a href="coins.html"  class="btn btn-theme btn-block" type="button" >Log in</a>
+			    			 </div>	
+			
+			    	</div>
+			     	
+			     </form>
+			      
+			  </div>
+			  <div id="signup" class="tab-pane fade">
+			    <form class="svg-animation-form ui form nav nav-pills">
+			      <div class="">
+			    			      		 	<div class="form-group">
+			    			      		 		<label for="email1">Name</label>
+			    			      		 	<input type="text"  id="email" class="form-control" maxlength="256"/>
+			    			      		 		
+			    			      		 	</div>
+			    			      		 	<div class="form-group">
+			    			      		 	<label for="">Email</label>
+			    			      		 	<input type="" id="password" class="form-control" />
+			    			      		 		
+			    			      		 	</div>
+			    
+			    			      		 <div class="form-group">
+			    			      		 	<label for="">Mobile</label>
+			    			      		 	<input type="" id="password" class="form-control" />
+			    			      		 		
+			    			      		 	</div>
+			    
+			    			      		 	<div class="form-group">
+			    			      		 	<label for="password">Password</label>
+			    			      		 	<input type="password" id="password" class="form-control" />
+			    			      		 		
+			    			      		 	</div>
+			    			      		 		<div class="form-group">
+			    			      		 	<label for="password">Confirm Password</label>
+			    			      		 	<input type="password" id="password" class="form-control" />
+			    			      		 		
+			    			      		 	</div>
+			    			      		 	
+			    
+			    
+			    			      				<span style="float: right;  margin-top: -24px;    display: block;">
+			    
+			      
+			    			      					Already have an account
+			    			      			   <a class="" data-toggle="pill" href="#login">Login</a>
+			    			      				</span>
+			    			      				
+			    
+			    			      			 <div class="inputGroup inputGroup3">
+
+			    			      			 	
+			    			    		<a href="" data-toggle="modal" data-target="#myModal" class="btn btn-theme btn-block">SignUp</a>
+
+			    			      			 </div>	
+			    			      	</div>
+			    	
+			    </form>
+			  </div>
+			 
+			</div>
+			
 		
-</h2>
+			
+				  	   
+		  
+		  </div>
 
-	<ul class="coin-list clearfix">
-		
-		<li>
-			<a href="">
-				<img src="img/icons/bitcoincash.png" alt="">
-				Rchain
-			</a>
-		</li>
-		<li>
-			<a href="">
-				<img src="img/icons/dash.png" alt="">
-				Rchain
-			</a>
-		</li>
-		<li>
-			<a href="">
-				<img src="img/icons/digixdao.png" alt="">
-				Rchain
-			</a>
-		</li>
-		<li>
-			<a href="">
-				<img src="img/icons/eos.png" alt="">
-				Rchain
-			</a>
-		</li>
-		<li>
-			<a href="">
-				<img src="img/icons/ethereum.png" alt="">
-				Rchain
-			</a>
-		</li>
-		<li>
-			<a href="">
-				<img src="img/icons/lisk.png" alt="">
-				Rchain
-			</a>
-		</li>
 
-		<li>
-			<a href="">
-				<img src="img/icons/neo.png" alt="">
-				Rchain
-			</a>
-		</li>
-			<li>
-			<a href="">
-				<img src="img/icons/omisego.png" alt="">
-				Rchain
-			</a>
-		</li>
-			<li>
-			<a href="">
-				<img src="img/icons/qtum.png" alt="">
-				Rchain
-			</a>
-		</li>
 
-		<li>
-			<a href="">
-				<img src="img/icons/rchain.png" alt="">
-				Rchain
-			</a>
-		</li>
-		
-		<li>
-			<a href="">
-				<img src="img/icons/steem.png" alt="">
-				Rchain
-			</a>
-		</li>
-		<li>
-			<a href="">
-				<img src="img/icons/tether.png" alt="">
-				Rchain
-			</a>
-		</li>
-		<li>
-			<a href="">
-				<img src="img/icons/vechain.png" alt="">
-				Rchain
-			</a>
-		</li>
-		<li>
-			<a href="">
-				<img src="img/icons/waves.png" alt="">
-				Rchain
-			</a>
-		</li>
-		<li>
-			<a href="">
-				<img src="img/icons/zcash.png" alt="">
-				Rchain
-			</a>
-		</li>
-	</ul>
+
+
+			  <div class="col-md-6" style="background: #fbfbfb;">
+			  		<div id="example4" class="slider-pro">
+			  			<div class="sp-slides">
+			  			
+			  			
+			  			
+			  			</div>
+			  	    </div>
+					  <div class="swiper-container">
+					    <div class="swiper-wrapper">
+					      <div class="swiper-slide">
+					      	<div class="intro-box">
+					      		<h3 class="header ui fw400 mt30">Look up your friend's <br> crypto recieving address</h3>
+					      		<img src="img/look.svg" alt="">
+					      		<p class="text-muted">
+					      			Lorem ipsum dolor sit amet, consectetur  adipisicing elit.<br> Natus, necessitatibus?
+					      		</p>
+					      	</div>
+					      	
+					      </div>
+					      <div class="swiper-slide">
+					      	<div class="intro-box">
+					      		<h3 class="header ui fw400 mt30">Share your crypto recieving address with your friends</h3>
+					      		<img src="img/share.svg" alt="">
+					      		<p class="text-muted">
+					      			Lorem ipsum dolor sit amet, consectetur  adipisicing elit.<br> Natus, necessitatibus?
+					      		</p>
+					      	</div>
+					      	
+					      </div>
+					    <div class="swiper-slide">
+					      	<div class="intro-box">
+					      		<h3 class="header ui fw400 mt30">Manage your cryptocurrencies</h3>
+					      		<img  src="img/manage.svg" alt="">
+					      		<p class="text-muted">
+					      			Lorem ipsum dolor sit amet, consectetur  adipisicing elit.<br> Natus, necessitatibus?
+					      		</p>
+					      	</div>
+					      	
+					      </div>
+					   
+			  					
+					    </div>
+					    <!-- Add Pagination -->
+					    <div class="swiper-pagination"></div>
+					  </div>
+
+			  </div>
+			 
 </div>
+
+
+	
+	</div>
+</div>
+
+</div>
+
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     
+        <button type="button" class="close" data-dismiss="modal" style="position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 28px;
+    z-index: 1000;">&times;</button>
+      <div class="modal-body">
+      	<h4 class="text-center" style="    margin-bottom: -40px;
+    margin-top: 50px;">Enter Your Otp	</h4>
+      	<img src="img/otp.svg" class="otp-img" alt="">
+       <input type="text" class="otp-input" placeholder="" autofocus>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
