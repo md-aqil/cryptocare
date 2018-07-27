@@ -58,12 +58,16 @@
 </nav>
 
 <div class="container">
-	<h2 class="coin-header color-bitcoin">Bitcoin <span>Public Address</span></h2>
+	<h2 class="coin-header color-bitcoin">Bitcoin <span>Public Address</span>
+		<span style="font-weight: 300;
+    color: #353535;">( User Name )</span>
+	</h2>
 		   
 		
 
-
-<table class="table coinlist">
+<div class="row">
+	<div class="col-md-8">
+		<table class="table coinlist">
 	
 	<tr class="image-row">
 			<td class="name"><img  src="img/zebpay.png" alt="" style="	background: #e4f0ff;">Zebpay</td>
@@ -76,7 +80,7 @@
 	</tr>
 	<tr class="image-row">
 		<td class="name"><img  src="img/bittrex.png" alt="" style="	background: #e4f0ff;">Bittrex</td>
-		<td class="input-td"><input type="text" class="form-control"></td>
+		<td class="input-td"><input type="text" class="form-control" value="https://www.zebapi.com/api/v1/market/ticker-new/btc/inr"></td>
 		<td width="10"><img src="img/qr-code.svg" alt=""></td>
 		<td width="10"><img src="img/copy.svg" alt=""></td>
 		<td width="10"><img src="img/edit.svg" alt=""></td>
@@ -84,12 +88,35 @@
 	<tr class="image-row">
 			<td class="name"><img  src="img/BITFINEX.png" alt="" style="	background: #f3ffe0;">Bitfinex</td>
 			<td class="input-td"><input type="text" class="form-control"></td>
-			<td width="10"><img src="img/qr-code.svg" alt=""></td>
-			<td width="10"><img src="img/copy.svg" alt=""></td>
-			<td width="10"><img src="img/edit.svg" alt=""></td>
+			<td colspan="4"><button class="btn btn-theme">SAVE</button></td>
 		</tr>
 
 </table>
+	</div>
+
+	<div class="col-md-4">
+		<div class="converter">
+			<form action="" class="row">
+				<div class="col-md-6">
+					<input type="text" class="form-control">
+				</div>
+				<div class="col-md-6">
+					<input type="text" class="form-control">
+				</div>
+				<div class="col-md-6">
+					<select name="" class="form-control" id="">
+						<option value="">INR</option>
+					</select>
+				</div>
+				<div class="col-md-6">
+					<input type="text" class="form-control">
+				</div>
+			</form>
+			<button class="btn btn-warning btn-block">Convert</button>
+		</div>
+	</div>
+</div>
+
 	
 </div>
 <script src="js/jquery.min.js"></script>
