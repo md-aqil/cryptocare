@@ -112,7 +112,15 @@
 					<input type="text" class="form-control">
 				</div>
 			</form>
-			<button class="btn btn-warning btn-block">Convert</button>
+			<button class="btn btn-warning btn-block convert-result-show">Convert</button>
+
+			<div class="convert-result">
+				<hr>
+				<h4>Result</h4>
+				<p class="text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quis?
+				</p>
+			</div>
 		</div>
 	</div>
 </div>
@@ -125,6 +133,11 @@
 <script src="js/controller.js"></script>
 
 <script>
+
+$('.convert-result-show').click(function() {
+	$('.convert-result').slideToggle();
+})
+
 	
 </script>
 </body>

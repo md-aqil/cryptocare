@@ -878,3 +878,7 @@ margin: 15px 15px;
 .mb50 {
 	margin-bottom: 50px;
 }
+
+.convert-result {
+	display: none;
+}
