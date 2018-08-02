@@ -514,11 +514,20 @@ hr.hr {
 	border-radius: 30px !important;
 }
 
-.ui.button.basic.own {
-	box-shadow: none !important;
-	    padding: 10px 25px;
+.btn-round {
+	
+	    box-shadow: none !important;
+	    padding: 9px 22px !important;
 	    margin-top: 6px;
 	    border: 1px solid #f0b500b5;
+	    border-radius: 30px !important;
+	    background: none !important;
+	    color: #444 !important;
+	
+}
+.btn-round:hover {
+	    background: var(--theme-color) !important;
+	    color: #fff !important;
 }
 label {
 	font-weight: 400;
@@ -679,8 +688,8 @@ label {
 				height: 30px;
 				border: none;
 				border-bottom: 1px solid #ddd;
-				font-size: 50px;
-				letter-spacing: 60px;
+				font-size: 40px;
+				letter-spacing: 30px;
 				text-align: center;
 				padding: 50px 0;
 			}
@@ -850,3 +859,22 @@ margin: 15px 15px;
   table .btn.btn-theme{
   	    padding: 7px 40px;
   }
+
+  .user-login-box .nav-pills {
+		padding: 0 15px;	
+  }
+
+  .text {
+    color: #95979a;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.verify-box {
+	padding: 35px;
+}
+.mb50 {
+	margin-bottom: 50px;
+}
